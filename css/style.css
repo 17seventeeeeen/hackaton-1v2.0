@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Signika+Negative:wght@400;500;700&display=swap");
+
+/* global tags */
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+header {
+  color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+input {
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: black;
+  border-color: #e0144c;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* header */
+.header {
+  background-image: url("/images/background.png.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-menu {
+  display: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  fill: white;
+}
+
+.navbar-logo {
+  font-size: 60px;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.navbar-logo::before {
+  content: "U";
+  color: #e0144c;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-items {
+  margin-left: 15px;
+  font-size: 22px;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+}
+
+.navbar-items::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 500ms;
+}
+
+.navbar-items.active-link::after {
+  width: 100%;
+}
+
+/* header content */
+.header-content {
+  margin-top: 30%;
+  width: 70%;
+  animation: slide-in 5s ease-in-out;
+}
+
+.header-content p {
+  font-size: 30px;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.header-content__title {
+  font-size: 60px;
+  font-family: "Signika Negative", sans-serif;
+  color: #e0144c;
+}
+
+/* section about me */
+.aboutme {
+  background-color: black;
+}
+
+.aboutme-wrapper {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+  /* flex-wrap: wrap; */
+}
+
+.aboutme-wrapper__left {
+  border-radius: 30px;
+}
+
+.aboutme-wrapper__right {
+  align-items: center;
+  margin: auto 25px;
+  margin-right: 0;
+}
+
+.aboutme-wrapper__right h2 {
+  font-size: 50px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.wrapper-right__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  color: gray;
+}
+
+.wrapper-right__titles {
+  display: flex;
+  justify-content: start;
+  font-size: 25px;
+  color: white;
+}
+
+.wrapper-right__links {
+  margin-right: 70px;
+}
+
+.skills-list {
+  list-style: none;
+  margin: 10px 0;
+  line-height: 50px;
+  padding: 0;
+}
+
+.skills-list span {
+  color: #b54769;
+  font-size: 22px;
+}
+
+.skills-list li {
+  font-size: 30px;
+  color: white;
+}
+
+.wrapper-right__titles::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 500ms;
+}
+
+.wrapper-right__titles.active-link::after {
+  width: 100%;
+}
+
+/* service section`  */
+
+.service {
+  background: black;
+}
+
+.service-title {
+  font-size: 50px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  padding-top: 160px;
+}
+
+.service-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.service-wrapper__card {
+  color: white;
+  background-color: #aaaaaa;
+  width: 400px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.service-wrapper__card img {
+  height: 90px;
+  width: 90px;
+  margin-left: 20px;
+}
+
+.service-card__title {
+  font-size: 35px;
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.service-card__text {
+  margin: 10px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.service-card__link {
+  text-decoration: none;
+  color: #b54769;
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.service-button {
+  background-color: transparent;
+  margin-top: 50px;
+  border-radius: 8px;
+  border-color: #ff004f;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 100px;
+}
+
+.service-button__parent {
+  display: flex;
+  justify-content: center;
+}
+
+.service-button:hover {
+  background-color: #e0144c;
+  color: #ffffff;
+  transition: 500ms;
+}
+
+.footer {
+  background-image: url("/images/background.png.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+.footer-contact h2 {
+  font-size: 50px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  padding-top: 80px;
+}
+
+.footer-contact p {
+  font-size: 30px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.footer-contact__input {
+  margin-top: 50px;
+}
+
+.footer-button {
+  margin-left: 0;
+}
+
+
+/* анимации */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+/* медиа запросы */
+@media (max-width: 1100px) {
+  .service-wrapper {
+    flex-wrap: wrap;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+  .aboutme-wrapper__img {
+    margin: 0 auto;
+  }
+
+  .aboutme-wrapper__right {
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  .aboutme-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .service-wrapper__card {
+    margin-top: 35px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .navbar-links {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .aboutme-wrapper__left {
+    width: 50%;
+  }
+  .active-link {
+    display: none;
+  }
+  input {
+    width: 200px;
+  }
+  footer{
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-contact {
+    padding-top: 0;
+    margin: 0 auto;
+  }
+  
+}
+
+@media (max-width: 320px) {
+  .aboutme-wrapper__left {
+    height: 600px;
+  }
+}
+
+
+@media all and (min-width:768px){
+  .burger-menu{
+    display: none;
+  }
+}
