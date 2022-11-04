@@ -11,7 +11,7 @@ header {
   color: #ffffff;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
@@ -30,7 +30,7 @@ input {
 
 /* header */
 .header {
-  background-image: url("/images/background.png.png");
+  background-image: url("./images/background.png.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,7 +278,7 @@ input {
 }
 
 .footer {
-  background-image: url("/images/background.png.png");
+  background-image: url("./images/background.png.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -311,7 +311,6 @@ input {
 .footer-button {
   margin-left: 0;
 }
-
 
 /* анимации */
 @keyframes slide-in {
@@ -348,7 +347,6 @@ input {
   .service-wrapper__card {
     margin-top: 35px;
   }
-
 }
 
 @media (max-width: 700px) {
@@ -367,7 +365,7 @@ input {
   input {
     width: 200px;
   }
-  footer{
+  footer {
     padding-top: 0;
   }
 }
@@ -377,7 +375,6 @@ input {
     padding-top: 0;
     margin: 0 auto;
   }
-  
 }
 
 @media (max-width: 320px) {
@@ -386,9 +383,8 @@ input {
   }
 }
 
-
-@media all and (min-width:768px){
-  .burger-menu{
+@media all and (min-width: 768px) {
+  .burger-menu {
     display: none;
   }
 }
